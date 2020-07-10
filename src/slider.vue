@@ -32,10 +32,10 @@
     </div>
     <template v-if="controlBtn">
       <button :class="[...btnControlStyle, ...btnControlLeftStyle]" @click.stop="prev">
-        <i class="slider-icon slider-icon-left" />
+        <i :class="[...btnControlIconStyle, ...btnControlLeftIconStyle]" />
       </button>
       <button :class="[...btnControlStyle, ...btnControlRightStyle]" @click.stop="next">
-        <i class="slider-icon slider-icon-right" />
+        <i :class="[...btnControlIconStyle, ...btnControlRightIconStyle]" />
       </button>
     </template>
   </div>
